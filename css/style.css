@@ -1,0 +1,105 @@
+:root{
+  --PrimaryFont:'Lexend Deca', sans-serif;
+  --secFont:'Big Shoulders Display', sans-serif;
+--brightOrange: hsl(31, 77%, 52%);
+--darkCyan: hsl(184, 100%, 22%);
+--veryDarkCyan: hsl(179, 100%, 13%);
+--transparentWhite : hsla(0, 0%, 100%, 0.75);
+--veryLightGray: hsl(0, 0%, 95%);
+
+}
+
+body{
+  font-family: var(--PrimaryFont);
+  font-weight: 400;
+  background: var(--veryLightGray);
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  margin: 15px;
+}
+
+img{
+  margin-top: 20px;
+  margin-right:80px ;
+  max-width: 100%;
+  width: auto;
+ margin-left: 200px;
+
+}
+
+.card{
+  display: grid;
+  margin: 10px;
+  padding: 90px;
+  margin: auto;
+}
+
+h1{
+text-align: center;
+color: var(--veryLightGray);
+font-weight: 700;
+}
+
+p{
+  text-align: center;
+  color: var(--transparentWhite);
+  font-weight: 400;
+  padding: 10px;
+  margin: 5px;
+}
+.header{
+  background: var(--brightOrange);
+  padding:   5px;
+  
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.middle{
+  background: var(--darkCyan);
+   padding: 5px ;
+    
+  border-radius: 5px;
+  font-weight: 400;
+}
+.footer{
+   background:var(--veryDarkCyan);
+    
+    padding: 5px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.button{
+  text-align: center;
+  background:var(--veryLightGray);
+ padding: 5px;
+ margin: 0px 140px;
+ border-radius: 10px;
+ margin-bottom: 15px;
+
+}
+a{
+  text-decoration: none;
+
+}
+.btn-1{
+  color:var(--brightOrange);
+}
+.btn-2{
+  color:var(--darkCyan);
+}
+.btn-3{
+  color:var(--veryDarkCyan);
+}
+
+/*Reponsive CSS*/
+
+@media (min-width:750px) {
+  .card{
+    grid-template-columns: repeat(3, 1fr);
+   max-width: 1440px;
+  }
+  
+}
